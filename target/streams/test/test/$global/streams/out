@@ -1,0 +1,174 @@
+[debug] Forking tests - parallelism = false
+[debug] Create a single-thread test executor
+[debug] Runner for org.scalatest.tools.Framework produced 2 initial tasks for 2 tests.
+[debug]   Running TaskDef(ApplicationSpec, sbt.ForkMain$SubclassFingerscan@28418f4b, false, [SuiteSelector])
+[info] ApplicationSpec:
+[info] Routes
+[info] - should send 404 on a bad request *** FAILED ***
+[info]   java.sql.SQLTimeoutException: Timeout after 1008ms of waiting for a connection.
+[info]   at com.zaxxer.hikari.pool.BaseHikariPool.getConnection(BaseHikariPool.java:227)
+[info]   at com.zaxxer.hikari.pool.BaseHikariPool.getConnection(BaseHikariPool.java:182)
+[info]   at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:93)
+[info]   at slick.jdbc.HikariCPJdbcDataSource.createConnection(JdbcDataSource.scala:131)
+[info]   at slick.jdbc.JdbcBackend$BaseSession.conn$lzycompute(JdbcBackend.scala:394)
+[info]   at slick.jdbc.JdbcBackend$BaseSession.conn(JdbcBackend.scala:394)
+[info]   at play.api.db.slick.evolutions.internal.DBApiAdapter$DatabaseAdapter.getConnection(DBApiAdapter.scala:54)
+[info]   at play.api.db.slick.evolutions.internal.DBApiAdapter$DatabaseAdapter.getConnection(DBApiAdapter.scala:56)
+[info]   at play.api.db.evolutions.DatabaseEvolutions.databaseEvolutions(EvolutionsApi.scala:119)
+[info]   at play.api.db.evolutions.DatabaseEvolutions.scripts(EvolutionsApi.scala:97)
+[info]   ...
+[info]   Cause: org.h2.jdbc.JdbcSQLException: Database may be already in use: "C:/Users/Asher/ticket-overlords/db/overlord.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-187]
+[info]   at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+[info]   at org.h2.message.DbException.get(DbException.java:168)
+[info]   at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:108)
+[info]   at org.h2.engine.Database.getPageStore(Database.java:2389)
+[info]   at org.h2.engine.Database.open(Database.java:669)
+[info]   at org.h2.engine.Database.openDatabase(Database.java:266)
+[info]   at org.h2.engine.Database.<init>(Database.java:260)
+[info]   at org.h2.engine.Engine.openSession(Engine.java:60)
+[info]   at org.h2.engine.Engine.openSession(Engine.java:167)
+[info]   at org.h2.engine.Engine.createSessionAndValidate(Engine.java:145)
+[info]   ...
+[info]   Cause: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Asher/ticket-overlords/db/overlord.mv.db [1.4.187/7]
+[info]   at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+[info]   at org.h2.mvstore.FileStore.open(FileStore.java:172)
+[info]   at org.h2.mvstore.MVStore.<init>(MVStore.java:337)
+[info]   at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2782)
+[info]   at org.h2.mvstore.db.MVTableEngine$Store.<init>(MVTableEngine.java:162)
+[info]   at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:98)
+[info]   at org.h2.engine.Database.getPageStore(Database.java:2389)
+[info]   at org.h2.engine.Database.open(Database.java:669)
+[info]   at org.h2.engine.Database.openDatabase(Database.java:266)
+[info]   at org.h2.engine.Database.<init>(Database.java:260)
+[info]   ...
+[info] HomeController
+[info] - should render the index page *** FAILED ***
+[info]   java.sql.SQLTimeoutException: Timeout after 1011ms of waiting for a connection.
+[info]   at com.zaxxer.hikari.pool.BaseHikariPool.getConnection(BaseHikariPool.java:227)
+[info]   at com.zaxxer.hikari.pool.BaseHikariPool.getConnection(BaseHikariPool.java:182)
+[info]   at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:93)
+[info]   at slick.jdbc.HikariCPJdbcDataSource.createConnection(JdbcDataSource.scala:131)
+[info]   at slick.jdbc.JdbcBackend$BaseSession.conn$lzycompute(JdbcBackend.scala:394)
+[info]   at slick.jdbc.JdbcBackend$BaseSession.conn(JdbcBackend.scala:394)
+[info]   at play.api.db.slick.evolutions.internal.DBApiAdapter$DatabaseAdapter.getConnection(DBApiAdapter.scala:54)
+[info]   at play.api.db.slick.evolutions.internal.DBApiAdapter$DatabaseAdapter.getConnection(DBApiAdapter.scala:56)
+[info]   at play.api.db.evolutions.DatabaseEvolutions.databaseEvolutions(EvolutionsApi.scala:119)
+[info]   at play.api.db.evolutions.DatabaseEvolutions.scripts(EvolutionsApi.scala:97)
+[info]   ...
+[info]   Cause: org.h2.jdbc.JdbcSQLException: Database may be already in use: "C:/Users/Asher/ticket-overlords/db/overlord.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-187]
+[info]   at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+[info]   at org.h2.message.DbException.get(DbException.java:168)
+[info]   at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:108)
+[info]   at org.h2.engine.Database.getPageStore(Database.java:2389)
+[info]   at org.h2.engine.Database.open(Database.java:669)
+[info]   at org.h2.engine.Database.openDatabase(Database.java:266)
+[info]   at org.h2.engine.Database.<init>(Database.java:260)
+[info]   at org.h2.engine.Engine.openSession(Engine.java:60)
+[info]   at org.h2.engine.Engine.openSession(Engine.java:167)
+[info]   at org.h2.engine.Engine.createSessionAndValidate(Engine.java:145)
+[info]   ...
+[info]   Cause: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Asher/ticket-overlords/db/overlord.mv.db [1.4.187/7]
+[info]   at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+[info]   at org.h2.mvstore.FileStore.open(FileStore.java:172)
+[info]   at org.h2.mvstore.MVStore.<init>(MVStore.java:337)
+[info]   at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2782)
+[info]   at org.h2.mvstore.db.MVTableEngine$Store.<init>(MVTableEngine.java:162)
+[info]   at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:98)
+[info]   at org.h2.engine.Database.getPageStore(Database.java:2389)
+[info]   at org.h2.engine.Database.open(Database.java:669)
+[info]   at org.h2.engine.Database.openDatabase(Database.java:266)
+[info]   at org.h2.engine.Database.<init>(Database.java:260)
+[info]   ...
+[info] CountController
+[info] - should return an increasing count *** FAILED ***
+[info]   java.sql.SQLTimeoutException: Timeout after 1001ms of waiting for a connection.
+[info]   at com.zaxxer.hikari.pool.BaseHikariPool.getConnection(BaseHikariPool.java:227)
+[info]   at com.zaxxer.hikari.pool.BaseHikariPool.getConnection(BaseHikariPool.java:182)
+[info]   at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:93)
+[info]   at slick.jdbc.HikariCPJdbcDataSource.createConnection(JdbcDataSource.scala:131)
+[info]   at slick.jdbc.JdbcBackend$BaseSession.conn$lzycompute(JdbcBackend.scala:394)
+[info]   at slick.jdbc.JdbcBackend$BaseSession.conn(JdbcBackend.scala:394)
+[info]   at play.api.db.slick.evolutions.internal.DBApiAdapter$DatabaseAdapter.getConnection(DBApiAdapter.scala:54)
+[info]   at play.api.db.slick.evolutions.internal.DBApiAdapter$DatabaseAdapter.getConnection(DBApiAdapter.scala:56)
+[info]   at play.api.db.evolutions.DatabaseEvolutions.databaseEvolutions(EvolutionsApi.scala:119)
+[info]   at play.api.db.evolutions.DatabaseEvolutions.scripts(EvolutionsApi.scala:97)
+[info]   ...
+[info]   Cause: org.h2.jdbc.JdbcSQLException: Database may be already in use: "C:/Users/Asher/ticket-overlords/db/overlord.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-187]
+[info]   at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+[info]   at org.h2.message.DbException.get(DbException.java:168)
+[info]   at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:108)
+[info]   at org.h2.engine.Database.getPageStore(Database.java:2389)
+[info]   at org.h2.engine.Database.open(Database.java:669)
+[info]   at org.h2.engine.Database.openDatabase(Database.java:266)
+[info]   at org.h2.engine.Database.<init>(Database.java:260)
+[info]   at org.h2.engine.Engine.openSession(Engine.java:60)
+[info]   at org.h2.engine.Engine.openSession(Engine.java:167)
+[info]   at org.h2.engine.Engine.createSessionAndValidate(Engine.java:145)
+[info]   ...
+[info]   Cause: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Asher/ticket-overlords/db/overlord.mv.db [1.4.187/7]
+[info]   at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+[info]   at org.h2.mvstore.FileStore.open(FileStore.java:172)
+[info]   at org.h2.mvstore.MVStore.<init>(MVStore.java:337)
+[info]   at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2782)
+[info]   at org.h2.mvstore.db.MVTableEngine$Store.<init>(MVTableEngine.java:162)
+[info]   at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:98)
+[info]   at org.h2.engine.Database.getPageStore(Database.java:2389)
+[info]   at org.h2.engine.Database.open(Database.java:669)
+[info]   at org.h2.engine.Database.openDatabase(Database.java:266)
+[info]   at org.h2.engine.Database.<init>(Database.java:260)
+[info]   ...
+[debug]     Produced 0 nested tasks and 3 events.
+[debug]   Running TaskDef(IntegrationSpec, sbt.ForkMain$SubclassFingerscan@586c52a9, false, [SuiteSelector])
+[info] IntegrationSpec:
+[info] Application
+[info] - should work from within a browser *** FAILED ***
+[info]   java.sql.SQLTimeoutException: Timeout after 1001ms of waiting for a connection.
+[info]   at com.zaxxer.hikari.pool.BaseHikariPool.getConnection(BaseHikariPool.java:227)
+[info]   at com.zaxxer.hikari.pool.BaseHikariPool.getConnection(BaseHikariPool.java:182)
+[info]   at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:93)
+[info]   at slick.jdbc.HikariCPJdbcDataSource.createConnection(JdbcDataSource.scala:131)
+[info]   at slick.jdbc.JdbcBackend$BaseSession.conn$lzycompute(JdbcBackend.scala:394)
+[info]   at slick.jdbc.JdbcBackend$BaseSession.conn(JdbcBackend.scala:394)
+[info]   at play.api.db.slick.evolutions.internal.DBApiAdapter$DatabaseAdapter.getConnection(DBApiAdapter.scala:54)
+[info]   at play.api.db.slick.evolutions.internal.DBApiAdapter$DatabaseAdapter.getConnection(DBApiAdapter.scala:56)
+[info]   at play.api.db.evolutions.DatabaseEvolutions.databaseEvolutions(EvolutionsApi.scala:119)
+[info]   at play.api.db.evolutions.DatabaseEvolutions.scripts(EvolutionsApi.scala:97)
+[info]   ...
+[info]   Cause: org.h2.jdbc.JdbcSQLException: Database may be already in use: "C:/Users/Asher/ticket-overlords/db/overlord.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-187]
+[info]   at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+[info]   at org.h2.message.DbException.get(DbException.java:168)
+[info]   at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:108)
+[info]   at org.h2.engine.Database.getPageStore(Database.java:2389)
+[info]   at org.h2.engine.Database.open(Database.java:669)
+[info]   at org.h2.engine.Database.openDatabase(Database.java:266)
+[info]   at org.h2.engine.Database.<init>(Database.java:260)
+[info]   at org.h2.engine.Engine.openSession(Engine.java:60)
+[info]   at org.h2.engine.Engine.openSession(Engine.java:167)
+[info]   at org.h2.engine.Engine.createSessionAndValidate(Engine.java:145)
+[info]   ...
+[info]   Cause: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Asher/ticket-overlords/db/overlord.mv.db [1.4.187/7]
+[info]   at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+[info]   at org.h2.mvstore.FileStore.open(FileStore.java:172)
+[info]   at org.h2.mvstore.MVStore.<init>(MVStore.java:337)
+[info]   at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2782)
+[info]   at org.h2.mvstore.db.MVTableEngine$Store.<init>(MVTableEngine.java:162)
+[info]   at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:98)
+[info]   at org.h2.engine.Database.getPageStore(Database.java:2389)
+[info]   at org.h2.engine.Database.open(Database.java:669)
+[info]   at org.h2.engine.Database.openDatabase(Database.java:266)
+[info]   at org.h2.engine.Database.<init>(Database.java:260)
+[info]   ...
+[debug]     Produced 0 nested tasks and 1 events.
+[debug] Runner for com.novocode.junit.JUnitFramework produced 0 initial tasks for 0 tests.
+[info] ScalaTest
+[info] Run completed in 18 seconds, 834 milliseconds.
+[info] Total number of tests run: 4
+[info] Suites: completed 2, aborted 0
+[info] Tests: succeeded 0, failed 4, canceled 0, ignored 0, pending 0
+[info] *** 4 TESTS FAILED ***
+[debug] Summary for JUnit not available.
+[error] Failed: Total 4, Failed 4, Errors 0, Passed 0
+[error] Failed tests:
+[error] 	ApplicationSpec
+[error] 	IntegrationSpec
+[error] (test:test) sbt.TestsFailedException: Tests unsuccessful

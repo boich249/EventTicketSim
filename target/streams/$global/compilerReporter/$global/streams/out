@@ -1,0 +1,4 @@
+[warn] C:\Users\Asher\ticket-overlords\app\controllers\Events.scala:61: method current in object Play is deprecated: This is a static reference to application, use DI instead
+[warn]         val configuredTimeout = current.configuration.getInt(timeoutKey)
+[warn]                                 ^
+[warn] one warning found

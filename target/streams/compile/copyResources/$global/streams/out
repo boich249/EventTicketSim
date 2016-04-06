@@ -1,0 +1,8 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Asher\ticket-overlords\conf\application.conf,C:\Users\Asher\ticket-overlords\target\scala-2.11\classes\application.conf)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Asher\ticket-overlords\conf\evolutions,C:\Users\Asher\ticket-overlords\target\scala-2.11\classes\evolutions)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Asher\ticket-overlords\conf\logback.xml,C:\Users\Asher\ticket-overlords\target\scala-2.11\classes\logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Asher\ticket-overlords\conf\routes,C:\Users\Asher\ticket-overlords\target\scala-2.11\classes\routes)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Asher\ticket-overlords\conf\evolutions\default,C:\Users\Asher\ticket-overlords\target\scala-2.11\classes\evolutions\default)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Asher\ticket-overlords\conf\evolutions\default\1.sql,C:\Users\Asher\ticket-overlords\target\scala-2.11\classes\evolutions\default\1.sql)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Asher\ticket-overlords\conf\evolutions\default\2.sql,C:\Users\Asher\ticket-overlords\target\scala-2.11\classes\evolutions\default\2.sql)[0m

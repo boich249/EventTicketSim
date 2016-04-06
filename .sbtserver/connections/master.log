@@ -1,0 +1,39 @@
+New log file opened at Mon Apr 04 23:25:21 EDT 2016 by 8952@Asher
+Taking next connection to: 50479
+New client attempting to connect on port: 50480-50479
+  Address = /192.168.2.11:50479
+This client on port 50480 has uuid 40014187-2eb7-4c80-9294-4d8c63bf2850 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-40014187-2eb7-4c80-9294-4d8c63bf2850
+Taking next connection to: 50479
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50479
+New client attempting to connect on port: 50559-50479
+  Address = /192.168.2.11:50479
+Handshake exception on socket: 50559
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at java.io.DataInputStream.readInt(Unknown Source)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 50479
+New client attempting to connect on port: 50560-50479
+  Address = /192.168.2.11:50479
+This client on port 50560 has uuid 9b69df19-55b6-4241-aa13-c2a2aa7595e4 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-9b69df19-55b6-4241-aa13-c2a2aa7595e4
+Taking next connection to: 50479
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 8952@Asher logs at Mon Apr 04 23:34:04 EDT 2016, goodbye.

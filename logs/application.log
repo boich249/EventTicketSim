@@ -1,0 +1,20 @@
+2016-04-05 00:52:43,520 [INFO] from play.core.server.NettyServer in pool-8238-thread-2 - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2016-04-05 00:52:47,259 [INFO] from play.core.server.NettyServer in pool-8238-thread-2 - Stopping server...
+2016-04-05 00:56:46,446 [INFO] from play.core.server.NettyServer in pool-8244-thread-4 - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2016-04-05 00:57:06,371 [WARN] from com.zaxxer.hikari.HikariConfig in ForkJoinPool-2-worker-1 - validationTimeout is greater than connectionTimeout, setting validationTimeout to connectionTimeout.
+2016-04-05 00:57:06,464 [INFO] from application in ForkJoinPool-2-worker-1 - ApplicationTimer demo: Starting application at 2016-04-05T04:57:06.463Z.
+2016-04-05 00:57:06,623 [INFO] from play.api.Play in ForkJoinPool-2-worker-1 - Application started (Dev)
+2016-04-05 00:57:10,738 [DEBUG] from application in application-akka.actor.default-dispatcher-9 - something of nothing
+2016-04-05 00:57:10,738 [DEBUG] from application in application-akka.actor.default-dispatcher-6 - something of nothing
+2016-04-05 00:57:10,754 [DEBUG] from application in application-akka.actor.default-dispatcher-5 - 990
+2016-04-05 00:59:40,002 [INFO] from application in application-akka.actor.default-dispatcher-19 - ApplicationTimer demo: Stopping application at 2016-04-05T04:59:40.001Z after 154s.
+2016-04-05 00:59:40,208 [WARN] from com.zaxxer.hikari.HikariConfig in application-akka.actor.default-dispatcher-19 - validationTimeout is greater than connectionTimeout, setting validationTimeout to connectionTimeout.
+2016-04-05 00:59:40,229 [INFO] from application in application-akka.actor.default-dispatcher-19 - ApplicationTimer demo: Starting application at 2016-04-05T04:59:40.226Z.
+2016-04-05 00:59:40,301 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-19 - Application started (Dev)
+2016-04-05 00:59:43,699 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - 10
+2016-04-05 00:59:43,699 [DEBUG] from application in application-akka.actor.default-dispatcher-4 - 10
+2016-04-05 00:59:43,699 [DEBUG] from application in application-akka.actor.default-dispatcher-6 - 10
+2016-04-05 00:59:43,738 [DEBUG] from application in application-akka.actor.default-dispatcher-6 - 990
+2016-04-05 00:59:43,738 [DEBUG] from application in application-akka.actor.default-dispatcher-4 - 990
+2016-04-05 00:59:43,738 [DEBUG] from application in application-akka.actor.default-dispatcher-7 - 990
+2016-04-05 01:12:59,340 [INFO] from application in pool-8244-thread-4 - ApplicationTimer demo: Stopping application at 2016-04-05T05:12:59.340Z after 799s.

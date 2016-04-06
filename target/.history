@@ -1,0 +1,97 @@
+~run
+eclipse with-source=true
+~run
+$ curl -w '\n' http://localhost:9000/tickets/available/
+curl -w '\n' http://localhost:9000/tickets/available/
+:quit
+~run
+h2-browser
+~run
+h2-browser
+~run
+clean compile run
+clean
+compile
+refresh
+~run
+reload
+update
+eclipse
+clean compile eclipse
+clean compile
+clean
+compile
+clean compile
+clean
+compile
+eclipse
+clean
+compile
+eclipse
+reload
+refresh
+update
+eclipse
+update
+reload
+eclipse
+clean
+compile
+~run
+clean
+compile
+~run
+clean
+compile
+~run
+reload
+update
+clean
+compile
+reload
+update
+~run
+reload
+update
+~run
+reload
+update
+eclipse
+compile
+~run
+h2-browser
+~run
+reload
+update
+~run
+h2-browser
+~run
+clean
+compile
+~run
+reload
+update
+eclipse
+clean
+compile
+eclipse
+~run
+reload
+update
+compile
+~run
+reload
+update
+clean
+compile
+~run
+run
+~run
+-jvn-debug 9999 run
+-jvm-debug 9999 run
+reload
+update
+eclipse
+~run
+h2-browser
+~run

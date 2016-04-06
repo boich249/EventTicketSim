@@ -1,0 +1,51 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@()
+
+@*
+ * Call the the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Ticket Overlords", "main") {
+	
+	<div id="mount"></div>
+}
+	@*<script type="text/javascript">
+		$(document).ready(function(){
+
+			var ticketsAvail = jsR.controllers.Tickets.ticketsAvailable();
+			//connect to endpoint
+			ticketsAvail.ajax({
+				success: function(result){
+					var qty = result.ticketQuantity;
+					// Set the pluralization of the result
+	                var areVsIs = 'are ';
+	                var plural = 's';
+	                if (qty === 1) {
+	                    areVsIs = 'is ';
+	                    plural = '';
+	                }
+	
+	             // Build the result string
+	                var display = 'There ' + areVsIs +
+	                    qty + ' ticket' +
+	                    plural + ' available!';
+	             // Write display var to ticketsAvailable span
+		             $("#ticketsAvailable").text(display);
+	            },
+	            failure: function(err) {
+	                var errorText = 'There was an error';
+	                // Write errorText to ticketsAvailable span
+	                $("#ticketsAvailable").text(display);
+	            }
+			});
+		});
+    </script>
+
+    You want to go see a show?
+    <span id="ticketsAvailable"></span>
+*@
+
