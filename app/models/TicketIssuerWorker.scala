@@ -5,7 +5,7 @@ import akka.actor.Actor
 import akka.actor.Status.{ Failure => ActorFailure }
 import play.api.libs.concurrent.Execution.Implicits._
 
-// Individual tickeet issuers for each ticket block
+// Individual ticket issuers for each ticket block
 class TicketIssuerWorker(ticketBlockID: Long) extends Actor {
   
   // Create an order asynchronously
@@ -40,7 +40,7 @@ class TicketIssuerWorker(ticketBlockID: Long) extends Actor {
     } else true
   }
   
-  // Used to tell issuers to add available tickets
+  // Used to tell issuers to add to the number of available tickets
   case class AddTickets(quantity: Int)
   
   // The following methods define possible Receive states
